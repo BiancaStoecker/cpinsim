@@ -8,10 +8,6 @@ import cpinsim.protein_type as protein_type
 from cpinsim.infinite_simulation import InfiniteSimulation
 
 
-__author__ = "Bianca Stöcker"
-__version__ = "0.5.1"
-
-
 def get_argument_parser():
     """ Return an argument parser.
     """

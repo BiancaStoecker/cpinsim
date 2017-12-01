@@ -2,12 +2,14 @@
 from setuptools import setup
 import sys
 
-from cpinsim import __version__
+
+# set __version__, __author__
+exec(open("simlord/version.py", encoding="utf-8").read())
 
 setup(
     name = 'cpinsim',
-    version = __version__,
-    author = 'Bianca Stöcker',
+    version=__version__,
+    author=__author__,
     author_email = 'bianca.stoecker@tu-dortmund.de',
     description = 'CPINSim - Constrained Protein Interaction Networks Simulator\n CPINSim is a package for the simulation of constrained protein interaction networks. Beside simulation of complex formation in a cell there are methods for data preprocessing provided:  Annotation of interactions and constraints with domains; A parser to provide the needed protein input format.',
     long_description = open("README.rst").read(),
