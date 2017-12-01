@@ -64,7 +64,8 @@ The needed input file ``proteins_extended_adhesome.csv`` can be downloaded from 
 
 .. code-block:: shell
 
-    wget http://github.com/BiancaStoecker/cpinsim/blob/master/example_files/proteins_extended_adhesome.csv
+    wget https://raw.githubusercontent.com/BiancaStoecker/cpinsim/master/example_files/proteins_extended_adhesome.csv
+
 
 **Example 1:** Simulate the complex formation for proteins ``proteins_extended_adhesome.csv`` with 100 copies per protein (``-n``). Save the simulated graph at ``simulated_graph.gz`` and some logging information about the simulation steps at ``simulation.log``.
 
