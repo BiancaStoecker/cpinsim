@@ -4,7 +4,7 @@ import sys
 
 
 # set __version__, __author__
-exec(open("simlord/version.py", encoding="utf-8").read())
+exec(open("cpinsim/version.py", encoding="utf-8").read())
 
 setup(
     name = 'cpinsim',
