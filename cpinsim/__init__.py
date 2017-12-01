@@ -9,7 +9,7 @@ from cpinsim.infinite_simulation import InfiniteSimulation
 
 
 __author__ = "Bianca Stöcker"
-__version__ = "0.5.0"
+__version__ = "0.5.1"
 
 
 def get_argument_parser():

@@ -18,12 +18,12 @@ setup(
         "console_scripts": ["cpinsim = cpinsim:main"]
     },
     install_requires=[
-        "networkx==1.10.0",
+        "networkx==1.11.0",
         "bitarray==0.8.1",
         "scipy"
     ],
     classifiers = [
-        "Development Status :: Development",
+        "Development Status :: 4 - Beta",
         "Environment :: Console",
         "Intended Audience :: Science/Research",
         "License :: OSI Approved :: MIT License",
