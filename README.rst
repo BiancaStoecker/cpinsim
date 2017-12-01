@@ -92,18 +92,16 @@ To investigate the simulation results one can extract the simulation graph in a 
     import pickle, gzip
     import networkx as nx
     
-    f = gzip.open("simulated_graph.gz", "rb")
-    graph = pickle.load(f)
-    
-    # get list of complexes sorted descendingly by their number of nodes
-    complexes = sorted(list(nx.connected_component_subgraphs(graph)), key=len, reverse=True)
-    for c in complexes[0:5]:
-        # nodes have unique integer ids, for protein name the "name" attribut is needed
-        print([c.node[node]["name"] for node in c])
-    
-    f.close()
+    with gzip.open("simulated_graph.gz", "rb") as f:
+        # load graph, each complex is a connected component
+        graph = pickle.load(f)
+        # get list of complexes sorted descendingly by their number of nodes
+        complexes = sorted(list(nx.connected_component_subgraphs(graph)), key=len, reverse=True)
+        # print the first 5 complexes
+        for c in complexes[:5]:
+            # nodes have unique integer ids, for protein name the "name" attribut is needed
+            print([c.node[node]["name"] for node in c])
 
 With the steps above, ``complexes`` contains each protein complex as full networkx graph datastructure for further analysis. 
 
 Additional example files for the data preprocessing steps and a full workflow including the evaluation of the simulation results will we uploaded in the near future.
- 
