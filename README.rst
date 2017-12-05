@@ -7,7 +7,7 @@ README
 CPINSim - Constrained Protein Interaction Networks Simulator
 -------------------------------------------------------------
 
-CPINSim is a package for the simulation of constrained protein interaction networks. Beside simulation of complex formation in a cell there are methods for data preprocessing provided:  Annotation of interactions and constraints with domains; A parser to provide the needed protein input format.
+CPINSim is a package for the simulation of constrained protein interaction networks. Besides simulation of complex formation in a cell, it also provides methods for data preprocessing:  annotation of interactions and constraints with domains and a parser to provide the needed protein input format.
 
 
 Features
@@ -49,9 +49,9 @@ Alternatively, you can download the source code from `github <http://github.com/
 
    $ git clone http://github.com/BiancaStoecker/cpinsim.git cpinsim
    $ cd cpinsim
-   /cpinsim python setup.py install
+   ~/cpinsim$ python setup.py install
 
-In this case you have to install the requirements listed above.
+In this case you have to manually install the requirements listed above.
 
 
 Platform support
