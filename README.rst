@@ -1,3 +1,6 @@
+.. image:: https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg
+    :target: https://bioconda.github.io/recipes/cpinsim/README.html
+
 README
 ======
 
