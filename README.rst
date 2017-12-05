@@ -77,9 +77,13 @@ For further parameters the default values are used.
 
 .. code-block:: shell
 
-    $ cpinsim simulate example_files/proteins_extended_adhesome.csv -n 100 -og simulated_graph.gz -ol simlation.log
+    $ cpinsim simulate example_files/proteins_extended_adhesome.csv -n 100 -og simulated_graph.gz -ol simulation.log
 
-    
+
+Note: The simulated graph is a pickled Python object (from the networkx library), saved in gzipped format.
+To examine it, you have to write Python code to unzip and unpickle it and then use the networkx API to examine its properties (see below for an example).
+
+
 **Example 2:** Simulate the complex formation as in example 1, but now knock out the protein *FYN* and overexpress the protein *ABL1* by factor 5.
 
 
